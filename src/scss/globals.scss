@@ -1,0 +1,35 @@
+/* - Preparing for styling - */
+
+/* Reset default styles */
+@use "reset";
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@700&display=swap");
+
+/* Set variables */
+:root {
+	--dark: #212121;
+	--dark-add: #252525;
+	--light: #eaebed;
+	--green: #2f7336;
+	--red: #aa3a38;
+
+	--main: var(--dark);
+	--add: var(--dark-add);
+	--text: var(--light);
+
+	--inter-font: "Inter", serif;
+	--vibes-font: "Great Vibes", serif;
+	--slab-font: "Roboto Slab", serif;
+}
+
+/* - Styling - */
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: var(--inter-font);
+	background-color: var(--main);
+	color: var(--text);
+}
